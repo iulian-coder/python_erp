@@ -2,10 +2,7 @@
 
 def word_lengt(sentence):
     words = sentence.split()
-    lista = []
-    for i in words:
-        lista.append(len(i))
-    return lista
+    return [len(i) for i in words]
 
 
 print(word_lengt("Ce faci ?"))
