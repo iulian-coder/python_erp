@@ -13,12 +13,7 @@ def is_anagram(a, b):
     False
     '''
 
-    for letter in a:
-        if letter not in b:
-            return False
-    for letter in b:
-        if letter not in a:
-            return False
-    return True
-
-# De rezolvat !
+    if sorted(a.lower()) == sorted(b.lower()):
+        return True
+    else:
+        return False
